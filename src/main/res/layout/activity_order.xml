@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".OrderActivity"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/shop_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="HIVES PASTRIES"
+        android:textColor="@color/black"
+        android:background="#FFC107"
+        android:textSize="24sp"
+        android:gravity="center" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="45dp"
+            android:padding="10dp"
+            android:layout_above="@+id/addToCartButton" />
+
+        <Button
+            android:id="@+id/addToCartButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add to Cart"
+            android:backgroundTint="#FFC107"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp" />
+
+
+
+</RelativeLayout>

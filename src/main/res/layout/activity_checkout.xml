@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".Checkout"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/shop_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="HIVES PASTRIES"
+        android:textColor="@color/black"
+        android:background="#FFC107"
+        android:textSize="24sp"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/checkoutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Checkout"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/checkoutRecyclerView"
+            android:layout_width="401dp"
+            android:layout_height="496dp"
+            android:layout_below="@id/checkoutTitle"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/checkoutTotalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: Kes 0.00"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/checkoutRecyclerView"
+            android:layout_marginTop="4dp"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/confirmOrderButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Order"
+            android:textColor="@color/white"
+            android:backgroundTint="#9C27B0"
+            android:layout_below="@id/checkoutTotalAmount"
+            android:layout_marginTop="6dp" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<!-- activity_landing.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- Header with logo and navigation -->
+
+
+    <!-- Hero image or slider -->
+    <ImageView
+        android:id="@+id/heroImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/landing" />
+
+    <!-- Featured products section -->
+    <!-- Replace with RecyclerView or GridView for dynamic content -->
+
+
+    <!-- Footer -->
+
+</LinearLayout>

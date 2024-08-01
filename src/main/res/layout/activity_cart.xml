@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CartActivity"
+    android:background="@color/white">
+
+   <TextView
+       android:id="@+id/shop_name"
+       android:layout_width="match_parent"
+       android:layout_height="45dp"
+       android:text="HIVES PASTRIES"
+       android:textColor="@color/black"
+       android:background="#FFC107"
+       android:textSize="24sp"
+       android:gravity="center" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_marginTop="45dp"
+       android:padding="16dp">
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recyclerView"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1" />
+
+      <TextView
+          android:id="@+id/totalAmountTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Total: Kes 0.00"
+          android:textColor="@color/black"
+          android:textSize="18sp"
+          android:layout_marginBottom="2dp" />
+
+      <Button
+          android:id="@+id/proceedToCheckoutButton"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginEnd="16dp"
+          android:layout_marginBottom="5dp"
+          android:backgroundTint="#3F51B5"
+          android:textColor="@color/white"
+          android:text="Proceed to Checkout" />
+
+      <Button
+          android:id="@+id/addMoreItemsButton"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Add More Items"
+          android:backgroundTint="#FFC107"
+          android:layout_marginTop="6dp" />
+   </LinearLayout>
+</RelativeLayout>
